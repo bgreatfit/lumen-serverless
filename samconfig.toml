@@ -3,11 +3,12 @@ version = 0.1
 [default.deploy]
 [default.deploy.parameters]
 stack_name = "shipgora-app"
-s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-tn2bq8dq5nuq"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1rcahvj2bl5ms"
 s3_prefix = "shipgora-app"
-region = "us-east-1"
-profile = "remoteyear"
+region = "us-west-2"
+profile = "intelconstruct"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
 disable_rollback = true
 image_repositories = []
+parameter_overrides = "SecurityGroupIds=\"\" SubnetIds=\"\" proxyHost=\"\" username=\"\" db=\"mysql\" port=\"3306\" region=\"\""
