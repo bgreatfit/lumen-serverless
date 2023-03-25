@@ -17,6 +17,10 @@ $router->get('/user', function () use ($router) {
     return 'user';
 });
 
+$router->get('/me', function () use ($router) {
+    return 'me';
+});
+
 $router->get('/user_test', function () use ($router) {
     return 'user_test';
 });
